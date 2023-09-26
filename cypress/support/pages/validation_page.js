@@ -19,5 +19,21 @@ export default {
 
     },
 
+    validMessageLogin(message = '') {
+
+        if (message !== '') {
+            cy.get('.invalid_input')
+                .should('have.text', message)
+        }
+
+    },
+
+
+
+
+
+
+    
+
 
 }

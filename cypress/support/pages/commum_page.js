@@ -13,6 +13,19 @@ export default {
         cy.get('#user')
             .should('be.visible')
 
+    },
+
+    acessandoLoginUsuario() {
+
+        cy.visit('/')
+            .get('.header-logo')
+
+        cy.get('.fa-user')
+            .click()
+
+        cy.get('#btnLogin')
+            .should('be.visible')
+
     }
 
 }
