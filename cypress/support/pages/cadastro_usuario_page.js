@@ -35,12 +35,12 @@ export default {
         }
     },
 
-    preencherCadastro(nome, email, password) {
-        this.preencherNome(nome)
-        this.preencherEmail(email)
-        this.preencherPassword(password)
-        this.salvarCadastro()
-    },
+    // preencherCadastro(nome, email, password) {
+    //     this.preencherNome(nome)
+    //     this.preencherEmail(email)
+    //     this.preencherPassword(password)
+    //     this.salvarCadastro()
+    // },
 
 
 }

@@ -1,0 +1,36 @@
+[33mcommit edc1c70eb0c641346673cdc89d1757e81833d020[m[33m ([m[1;36mHEAD -> [m[1;32mImplementando-cucumber[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/Alteracao-login[m[33m, [m[1;32mAlteracao-login[m[33m)[m
+Author: Gabriel Moraes <gnm_moraes@hotmail.com>
+Date:   Tue Sep 26 14:55:06 2023 -0300
+
+    Feat: Alteração-Login
+
+[33mcommit 4aab374302504f5ad39a23b29c2f048a4932679d[m
+Merge: 8dad19d 6437b16
+Author: Gabriel Moraes <gnm_moraes@hotmail.com>
+Date:   Tue Sep 26 14:53:00 2023 -0300
+
+    Merge branch 'main' into Alteracao-login
+
+[33mcommit 8dad19dadd66b84c19aef48d290bf850568edfff[m
+Author: Gabriel Moraes <gnm_moraes@hotmail.com>
+Date:   Tue Sep 26 14:39:26 2023 -0300
+
+    Criação_Login
+
+[33mcommit 6437b16064a9c1b28f4f745f4d6f5349756ebd53[m
+Author: Gabriel Moraes <gnm_moraes@hotmail.com>
+Date:   Tue Sep 26 02:53:30 2023 -0300
+
+    Alteração-Login
+
+[33mcommit 900d0f18638b9e880cadc1b1e8b8d01a858c7e56[m
+Author: Gabriel Moraes <gnm_moraes@hotmail.com>
+Date:   Tue Sep 26 02:41:30 2023 -0300
+
+    Alteração Cadastr Usuario
+
+[33mcommit 245dbf9a86550e75a8165f50393883cccd60dce1[m
+Author: Gabriel Moraes <gnm_moraes@hotmail.com>
+Date:   Tue Sep 26 00:33:00 2023 -0300
+
+    Feat: Primeiro Commit
