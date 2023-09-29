@@ -3,11 +3,6 @@ Feature: Login
     Quero fazer login na aplicação
     Para realizar pedido de compra
 
-
-
-
-
-
     Scenario: Login com sucesso
 
         Given que estou na tela de login
