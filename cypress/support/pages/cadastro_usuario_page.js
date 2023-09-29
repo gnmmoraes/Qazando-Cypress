@@ -8,13 +8,13 @@ export default {
             .click()
     },
 
-    preencherNome(name = '') {
-
-        if (name !== '') {
+    preencherNome(name = "") {
+       
+       if (name !== "" )  {
             cy.get('#user')
-                .should('be.visible')
+               .should('be.visible')
                 .type(name)
-        }
+       }
     },
 
     preencherEmail(email = '') {
@@ -29,7 +29,7 @@ export default {
     preencherPassword(password = '') {
 
         if (password !== '') {
-            cy.get('input[type="password"]')
+            cy.get('#password')
                 .should('be.visible')
                 .type(password)
         }

@@ -6,18 +6,18 @@ Feature: Login
     Scenario: Login com sucesso
 
         Given que estou na tela de login
-        When preencho campo e-mail "teste@teste.com"
-            And preencho campo senha "pwd123"
+        When preencho email login "teste@teste.com"
+            And preencho senha login "pwd123"
             And clico em login
-        Then  Eu vejo a mensagem sucesso "Login realizado"
+        Then  valido mensagem com sucesso "Login realizado"
 
     
     Scenario Outline: Login com "<cenario_login>"
         Given que estou na tela de login
-        When preencho campo e-mail "<login_email>"
-            And preencho campo senha "<login_password>"
+        When preencho email login "<login_email>"
+            And preencho senha login "<login_password>"
             And clico em login
-        Then  Eu vejo a mensagem "<check_mensagem>"
+        Then  valido campo mensagem login "<check_mensagem>"
 
 
             Examples:
@@ -26,8 +26,6 @@ Feature: Login
             | e-mail incorreto | teste#teste.com | pwd123         | E-mail inválido. |
             | senha vazio      | teste@teste.com |                | Senha inválida.  |
             | senha incorreto  | teste@teste.com | pwd            | Senha inválida.  |
-
-
 
 
 

@@ -2,6 +2,7 @@
 
 export default {
 
+    // Mensagem de erro dos campo de formulario cadastro
     validCampoMessager(message = '') {
 
         if (message !== '') {
@@ -10,7 +11,8 @@ export default {
         }
     },
 
-    validCadastroSucesso(message = '') {
+    // Mensagem de erro dos campo de formulario sucesso  
+    validMessageSucesso(message = '') {
 
         if (message !== '') {
             cy.get('#swal2-title')
@@ -19,6 +21,7 @@ export default {
 
     },
 
+    // Mensagem de erro dos campo de formulario login 
     validMessageLogin(message = '') {
 
         if (message !== '') {

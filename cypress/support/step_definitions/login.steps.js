@@ -10,22 +10,20 @@ Given("que estou na tela de login", () => {
 	home_page.acessandoLoginUsuario()
 });
 
-When(/^preencho campo e-mail "([^"]*)"$/, (email) => {
-	//cadastro_usuario_page.preencherNome(email)
-	login_page.fillEmail(email)
+When("preencho email login {string}", (email) => {
+	login_page.fillEmail(`${email}`)
 });
 
-When(/^preencho campo senha "([^"]*)"$/, (password) => {
-	//cadastro_usuario_page.preencherPassword(password)
-	login_page.fillPassword(password)
+When("preencho senha login {string}", (senha) => {
+	login_page.fillPassword(`${senha}`)
 });
 
-When(/^clico em login$/, () => {
+When("clico em login", () => {
 	login_page.acessandoLogin()
 });
 
-Then(/^Eu vejo a mensagem sucesso "([^"]*)"$/, (message) => {
-	validation_page.validCadastroSucesso(message)
+Then("valido campo mensagem login {string}", (message) => {
+	validation_page.validMessageLogin(`${message}`)
 });
 
 
