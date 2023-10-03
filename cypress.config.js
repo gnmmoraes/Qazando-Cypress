@@ -5,6 +5,8 @@ const { addCucumberPreprocessorPlugin } = require("@badeball/cypress-cucumber-pr
 const { createEsbuildPlugin } = require("@badeball/cypress-cucumber-preprocessor/esbuild");
 
 module.exports = defineConfig({
+  reporter: 'cypress-mochawesome-reporter',
+
   e2e: {
     defaultCommandTimeout: 10000,
     viewportWidth: 1280,
@@ -15,7 +17,7 @@ module.exports = defineConfig({
 
 
     async setupNodeEvents(on, config) {
-
+      require('cypress-mochawesome-reporter/plugin')(on);
       addCucumberPreprocessorPlugin(on, config);
 
       on(

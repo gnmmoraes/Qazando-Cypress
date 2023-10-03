@@ -12,7 +12,7 @@ Feature: Login
         Then  valido mensagem com sucesso "Login realizado"
 
     
-    Scenario Outline: Login com "<cenario_login>"
+    Scenario Outline: Login com <cenario_login>
         Given que estou na tela de login
         When preencho email login "<login_email>"
             And preencho senha login "<login_password>"
